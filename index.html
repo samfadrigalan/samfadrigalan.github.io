@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Samantha Fadrigalan</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Slackey' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" conent="width=device-width">
   </head>
   <body>
     <header>
-      <p>Software Developer</p>
+      <span class="title">Software Developer</span>
       <h1>Samantha Fadrigalan</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#background">Background</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#background">Background</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="primary-content">
-      <div id="about">
+      <div id="about" class="b-border">
         <h2>About</h2>
         <p>
           Hello, my name is Samantha Fadrigalan! I am a rising junior in Computer
@@ -27,14 +30,13 @@
           Tigers!
         </p>
         <p>
-          My journey in Computer Science started with my high school teacher
-          in a small public boarding school in Louisiana. I took her Pre-Calculus
-          class during the fall of junior year, and she later tried to convince
-          me to take her C++ class the next semester. I refused. However, my
-          opinion on that subject did not matter as she also happened to be my
-          assigned advisor, and was in charge of my course schedule. I had planned
-          on just taking the class for a week and somehow bypass her for the
-          drop process. But, needless to say, I never did.
+          I fell&mdash; or was pushed&mdash; into Computer Science in my junior year
+          of high school. One of my math teachers tried to convince me to take
+          her C++ class during the spring. I refused. However, that same teacher
+          also happened to be my advisor, and had the power to schedule my
+          classes. And so I had planned on bypassing her and
+          drop the class the first week of the spring semester. Needless to say,
+          I never did it.
         </p>
         <p>
           I enjoy enjoy volunteering and organizing
@@ -43,20 +45,21 @@
           season. I also co-founded a hackathon at LSU, <a href="geauxhack.com">
           GeauxHack</a>, with tons of help from SPM. I'm also an officer of
           the very new Women in Computer Science (WICS) organization at LSU. A
-          bunch of us from SPM and WICS are also planning on having a program to
-          teach CS using Arduinos to secondary school girls. And I also recently
+          bunch of us from SPM and WICS are planning a program to
+          teach CS using Arduinos to secondary school girls. I also recently
            became president of Association of Computing Machinery (ACM) at LSU.
           If you would like to come join us for an ACM meeting, inquire about
-          GeauxHack, or anything regarding the above, feel free to contact me!
+          GeauxHack, or talk about anything from what I have mentioned, feel
+          free to contact me!
         </p>
         <p>
           This summer, I will have my very first internship as a Consultant intern
-          at Pariveda Solutions in Houston. I'm very excited to learn new things.
+          at Pariveda Solutions in Houston. I'm very excited start.
         </p>
         <p>
-          Aside from all things CS, I love music. I play guitar, piano, and sing
-          unafraid of how I sound. I sometimes treat my musically talented friends
-          as my personal band. I love tasting new foods. I like taking walks outside
+          Aside from all things CS, I love music. I play guitar, piano, and sing,
+           unafraid of how I sound. I often treat my musically talented friends
+          as my personal band. I enjoy tasting new foods. I love taking walks outside
           if it's just about 60&deg;F and the sky is a shade of orange. I love learning
           about other cultures. I'm recentely entering a Marvel phase (MCU). I might
           delve into the comic books soon.
@@ -65,35 +68,40 @@
           If you'd like to come visit an ACM meeting, inquire about GeauxHack, or
           anything above, feel free to contact me. If you would just like to say hi,
           you can contact me too! I love meeting people. If you want to look at
-          my code for this website, checkout my Github. Thank you for reading
+          my code for this website, checkout my <a href="https://github.com/samfadrigalan">Github</a>. Thank you for reading
           this far. :)
         </p>
       </div><!-- End of #about div -->
 
-      <div id="background">
+      <div id="background" class="b-border">
         <h2>Background</h2>
-        <div class="technologies">
-          <h3>Technologies</h3>
-          <h4>Worked with</h4>
-          <ul>
-            <li>Java</li>
-            <li>HTML/CSS</li>
-            <li>C++</li>
-            <li>Version Control (GIT)</li>
-          </ul>
-          <h4>Familiar with</h4>
-          <ul>
-            <li>Javascript/jQuery</li>
-            <li>Assembly</li>
-            <li>iOS</li>
-            <li>MPI</li>
-          </ul>
+          <div class="technologies">
+            <section class="left">
+              <h3>Technologies</h3>
+            </section><!-- End of .left section -->
+            <section class="right">
+              <h4>Worked with</h4>
+              <ul>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>C++</li>
+                <li>Version Control (GIT)</li>
+              </ul>
+              <h4>Familiar with</h4>
+              <ul>
+                <li>Javascript/jQuery</li>
+                <li>Assembly</li>
+                <li>iOS</li>
+                <li>MPI</li>
+              </ul>
+            </section><!-- End of .right section -->
+          </div><!-- End of .technologies div -->
         <div class="experience">
           <h3>Experience</h3>
           <ul>
             <li>
               <h4>Hackathon Co-Founder</h4>
-              <h5>GeauxHack, Baton Rouge, LA</h5>
+              <p class="location">GeauxHack, Baton Rouge, LA</p>
               <p>
                 Founded first MLH-sanctioned hackathon in Louisiana. Raised over
                 $10,000 from various sponsors. Led marketing, event logisitics,
@@ -103,8 +111,8 @@
               </p>
             </li>
             <li>
-              <h4>President</h4>
-              <h5>Association for Computing, LSU Chapter, May 2015 &mdash; present</h5>
+              <h4>President (ACM)</h4>
+              <p class="location">Association for Computing, LSU Chapter, May 2015 &mdash; present</p>
               <p>
                 Coordinate and plan general membership and officer meetings. Coordinate
                 and plan ACM events for the year.
@@ -112,7 +120,7 @@
             </li>
             <li>
               <h4>Mentor</h4>
-              <h5>Society of Peer Mentors, Baton Rouge, LA, Aug 2013 &mdash; present</h5>
+              <p class="location">Society of Peer Mentors, Baton Rouge, LA, Aug 2013 &mdash; present</p>
               <p>
                 Help freshmen engineering students transition into the university.
                 Wrote and received a $1,000 Student Seed Fund grant from NCWIT and
@@ -125,7 +133,7 @@
             </li>
             <li>
               <h4>Research Intern</h4>
-              <h5>Louisiana State University, Baton Rouge, LA, July 2012 &mdash; Nov 2012</h5>
+              <p class="location">Louisiana State University, Baton Rouge, LA, July 2012 &mdash; Nov 2012</p>
               <p>
                 Optimized dense matrix multiplication using MPI on LSU/XSEDE clusters
                 and Little Fe supercomputer. Learned different data structures
@@ -135,14 +143,35 @@
             </li>
             <!-- <li>
               <h4></h4>
-              <h5></h5>
+              <p></p>
               <p></p>
             </li> -->
           </ul>
+        </div><!-- End of .experience div -->
+
+        <div class="education">
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <h4>B.S. Computer Science, Math Minor</h4>
+              <p class="location">Louisiana State University, Baton Rouge, LA, Aug 2013 &mdash; May 2017</p>
+            </li>
+            <li>
+              <h4>High School Education</h4>
+              <p><span  class="location">Louisiana School for Math, Science, and the Arts</span>, Natchitoches, LA, 2011 &mdash; 2013</p>
+              <p><span  class="location">St. Micheal the Archangel High School</span>, Baton Rouge, LA, 2010 &mdash; 2013</p>
+              <p><span  class="location">Philippine Science High School</span>, Quezon, Philippines, 2008 &mdash; 2010</p>
+            </li>
+            <li>
+              <h4></h4>
+              <p></p>
+            </li>
+          </ul>
+        </div><!-- End of .education div -->
       </div><!-- End of #background div -->
 
       <div id="contact">
-        <h2>Say Hello</h2>
+        <h2>Say Hello!</h2>
         <p>
           If anything above interests, contact me. If you just want to say hello,
           I love meeting new people. Email me at:
@@ -155,14 +184,14 @@
 
     <footer>
       <div class="top-footer">
-        <a href="https://twitter.com/samfadrigalan"><img src="img/twitter-icon.png"></a>
-        <a href="https://instagram.com/samfadrigalan"><img src="img/instagram-icon.png"></a>
-        <a href="https://linkedin.com/in/samanthafadrigalan"><img src="img/linkedin-icon.png"></a>
-        <a href="https://github.com/samfadrigalan"><img src="img/github-icon.png"></a>
+        <a href="https://twitter.com/samfadrigalan"><img src="img/twitter-icon.png" class="social-icon"></a>
+        <a href="https://instagram.com/samfadrigalan"><img src="img/instagram-icon.png" class="social-icon"></a>
+        <a href="https://linkedin.com/in/samanthafadrigalan"><img src="img/linkedin-icon.png" class="social-icon"></a>
+        <a href="https://github.com/samfadrigalan"><img src="img/github-icon.png" class="social-icon"></a>
       </div><!-- End of .top-footer div -->
       <div class="bottom-footer">
-        <p>Back to top</p>
-        <p>&copy;2015 Samantha Fadrigalan</p>
+        <a href="#about"><p>Back to top &uarr;</p></a>
+        <p class="copyright">&copy;2015 Samantha Fadrigalan</p>
       </div><!-- End of .bottom-footer div -->
     </footer>
   </body>

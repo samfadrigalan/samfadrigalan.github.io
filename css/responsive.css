@@ -1,0 +1,34 @@
+@media screen and (min-width: 620px) {
+  /*#background section {
+    display: table;
+  }*/
+
+  .technologies {
+    overflow: hidden;
+    /*float: left;
+    width: 100%;*/
+  }
+
+  .left {
+    width: 40%;
+    float: left;
+  }
+
+  .right {
+    width: 60%;
+    float: right;
+  }
+
+  .technologies ul {
+    display: inline-block;
+  }
+
+  /*.experience {
+    display: block;
+    margin-top: 500px;
+    float: none;
+  }*/
+
+
+
+}
