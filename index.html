@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Samantha Fadrigalan</title>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Slackey' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Slackey' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
+    <header id="top">
       <span class="title">Software Developer</span>
       <h1>Samantha Fadrigalan</h1>
       <nav>
@@ -80,93 +81,105 @@
               <h3>Technologies</h3>
             </section><!-- End of .left section -->
             <section class="right">
-              <h4>Worked with</h4>
-              <ul>
-                <li>Java</li>
-                <li>HTML/CSS</li>
-                <li>C++</li>
-                <li>Version Control (GIT)</li>
-              </ul>
-              <h4>Familiar with</h4>
-              <ul>
-                <li>Javascript/jQuery</li>
-                <li>Assembly</li>
-                <li>iOS</li>
-                <li>MPI</li>
-              </ul>
+              <section class="left-ul">
+                <h4>Worked with</h4>
+                <ul>
+                  <li><span class="norm-text">Java</span></li>
+                  <li><span class="norm-text">HTML/CSS</span></li>
+                  <li><span class="norm-text">C++</span></li>
+                  <li><span class="norm-text">Version Control (GIT)</span></li>
+                </ul>
+              </section><!-- End of .left section -->
+              <section class="right-ul">
+                <h4>Familiar with</h4>
+                <ul>
+                  <li><span class="norm-text">Javascript/jQuery</span></li>
+                  <li><span class="norm-text">Assembly</span></li>
+                  <li><span class="norm-text">iOS</span></li>
+                  <li><span class="norm-text">MPI</span></li>
+                </ul>
+              </section><!-- End of .right section -->
             </section><!-- End of .right section -->
           </div><!-- End of .technologies div -->
         <div class="experience">
-          <h3>Experience</h3>
-          <ul>
-            <li>
-              <h4>Hackathon Co-Founder</h4>
-              <p class="location">GeauxHack, Baton Rouge, LA</p>
-              <p>
-                Founded first MLH-sanctioned hackathon in Louisiana. Raised over
-                $10,000 from various sponsors. Led marketing, event logisitics,
-                fund raising and allocation. Managed over 30 volunteers during
-                the event. Was feautured on WBRZ, WAFB, The Advocate, and other
-                local media outlets.
-              </p>
-            </li>
-            <li>
-              <h4>President (ACM)</h4>
-              <p class="location">Association for Computing, LSU Chapter, May 2015 &mdash; present</p>
-              <p>
-                Coordinate and plan general membership and officer meetings. Coordinate
-                and plan ACM events for the year.
-              </p>
-            </li>
-            <li>
-              <h4>Mentor</h4>
-              <p class="location">Society of Peer Mentors, Baton Rouge, LA, Aug 2013 &mdash; present</p>
-              <p>
-                Help freshmen engineering students transition into the university.
-                Wrote and received a $1,000 Student Seed Fund grant from NCWIT and
-                Symantex to purchase and use Arduinos to teach computer science
-                to female secondary students. Mentor local high school FIRST Robotics
-                Competition teams to build robots and foster teamwork and
-                leadership among the students. Maintain and update filing, inventory,
-                and database systems.
-              </p>
-            </li>
-            <li>
-              <h4>Research Intern</h4>
-              <p class="location">Louisiana State University, Baton Rouge, LA, July 2012 &mdash; Nov 2012</p>
-              <p>
-                Optimized dense matrix multiplication using MPI on LSU/XSEDE clusters
-                and Little Fe supercomputer. Learned different data structures
-                and computer architectures. Presented at the 2012 Oklahoma Supercomputing
-                Symposium.
-              </p>
-            </li>
-            <!-- <li>
-              <h4></h4>
-              <p></p>
-              <p></p>
-            </li> -->
-          </ul>
+          <section class="left">
+            <h3>Experience</h3>
+          </section><!-- End of .left section -->
+          <section class="right">
+            <ul>
+              <li>
+                <h4>Hackathon Co-Founder</h4>
+                <p class="location">GeauxHack, Baton Rouge, LA</p>
+                <p>
+                  Founded first MLH-sanctioned hackathon in Louisiana. Raised over
+                  $10,000 from various sponsors. Led marketing, event logisitics,
+                  fund raising and allocation. Managed over 30 volunteers during
+                  the event. Was feautured on WBRZ, WAFB, The Advocate, and other
+                  local media outlets.
+                </p>
+              </li>
+              <li>
+                <h4>President (ACM)</h4>
+                <p class="location">Association for Computing, LSU Chapter, May 2015 &mdash; present</p>
+                <p>
+                  Coordinate and plan general membership and officer meetings. Coordinate
+                  and plan ACM events for the year.
+                </p>
+              </li>
+              <li>
+                <h4>Mentor</h4>
+                <p class="location">Society of Peer Mentors, Baton Rouge, LA, Aug 2013 &mdash; present</p>
+                <p>
+                  Help freshmen engineering students transition into the university.
+                  Wrote and received a $1,000 Student Seed Fund grant from NCWIT and
+                  Symantex to purchase and use Arduinos to teach computer science
+                  to female secondary students. Mentor local high school FIRST Robotics
+                  Competition teams to build robots and foster teamwork and
+                  leadership among the students. Maintain and update filing, inventory,
+                  and database systems.
+                </p>
+              </li>
+              <li>
+                <h4>Research Intern</h4>
+                <p class="location">Louisiana State University, Baton Rouge, LA, July 2012 &mdash; Nov 2012</p>
+                <p>
+                  Optimized dense matrix multiplication using MPI on LSU/XSEDE clusters
+                  and Little Fe supercomputer. Learned different data structures
+                  and computer architectures. Presented at the 2012 Oklahoma Supercomputing
+                  Symposium.
+                </p>
+              </li>
+              <!-- <li>
+                <h4></h4>
+                <p></p>
+                <p></p>
+              </li> -->
+            </ul>
+          </section><!-- End of .right section -->
         </div><!-- End of .experience div -->
 
         <div class="education">
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <h4>B.S. Computer Science, Math Minor</h4>
-              <p class="location">Louisiana State University, Baton Rouge, LA, Aug 2013 &mdash; May 2017</p>
-            </li>
-            <li>
-              <h4>High School Education</h4>
-              <p><span  class="location">Louisiana School for Math, Science, and the Arts</span>, Natchitoches, LA, 2011 &mdash; 2013</p>
-              <p><span  class="location">St. Micheal the Archangel High School</span>, Baton Rouge, LA, 2010 &mdash; 2013</p>
-              <p><span  class="location">Philippine Science High School</span>, Quezon, Philippines, 2008 &mdash; 2010</p>
-            </li>
-            <li>
-              <h4></h4>
-              <p></p>
-            </li>
-          </ul>
+          <section class="left">
+            <h3>Education</h3>
+          </section><!-- End of .left section -->
+          <section class="right">
+            <ul>
+              <li>
+                <h4>B.S. Computer Science, Math Minor</h4>
+                <p class="location">Louisiana State University, Baton Rouge, LA, Aug 2013 &mdash; May 2017</p>
+              </li>
+              <li>
+                <h4>High School Education</h4>
+                <p><span  class="location">Louisiana School for Math, Science, and the Arts</span>, Natchitoches, LA, 2011 &mdash; 2013</p>
+                <p><span  class="location">St. Micheal the Archangel High School</span>, Baton Rouge, LA, 2010 &mdash; 2013</p>
+                <p><span  class="location">Philippine Science High School</span>, Quezon, Philippines, 2008 &mdash; 2010</p>
+              </li>
+              <li>
+                <h4></h4>
+                <p></p>
+              </li>
+            </ul>
+          </section><!-- End of .right section -->
         </div><!-- End of .education div -->
       </div><!-- End of #background div -->
 
@@ -175,9 +188,8 @@
         <p>
           If anything above interests, contact me. If you just want to say hello,
           I love meeting new people. Email me at:
-        </p>
-        <p>
-          <<{email placeholder}>>
+          <a href="mailto:hello@samfadrigalan.me?Subject=Hello" class="email">
+          hello@samfadrigalan.me</a>
         </p>
       </div><!-- End of #contact div -->
     </div><!-- End of .primary_content div -->
@@ -188,9 +200,10 @@
         <a href="https://instagram.com/samfadrigalan"><img src="img/instagram-icon.png" class="social-icon"></a>
         <a href="https://linkedin.com/in/samanthafadrigalan"><img src="img/linkedin-icon.png" class="social-icon"></a>
         <a href="https://github.com/samfadrigalan"><img src="img/github-icon.png" class="social-icon"></a>
+        <a href="mailto:hello@samfadrigalan.me?Subject=Hello" target="_top"><img src="img/email-icon.png" class="social-icon"></a>
       </div><!-- End of .top-footer div -->
       <div class="bottom-footer">
-        <a href="#about"><p>Back to top &uarr;</p></a>
+        <a href="#top"><p>Back to top &uarr;</p></a>
         <p class="copyright">&copy;2015 Samantha Fadrigalan</p>
       </div><!-- End of .bottom-footer div -->
     </footer>

@@ -2,12 +2,18 @@
 GENERAL
 ************************************/
 
+@@font-face {
+  src:
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font: 1em/1.5 'Source Sans Pro', sans-serif;
+  /*font: 1em/1.5 'Source Sans Pro', sans-serif;*/
+  font: 1em/1.5 'Open Sans', sans-serif;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -19,6 +25,13 @@ body {
   max-width: 940px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
 h2,
 nav {
   text-transform: uppercase;
@@ -26,7 +39,7 @@ nav {
 }
 
 h1 {
-  font: 3.5rem 'Slackey', cursive;
+  font: 3rem 'Slackey', cursive;
   line-height: 1.3;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
   text-align: center;
@@ -54,7 +67,7 @@ li {
 }
 
 .b-border{
-  border-bottom: 1.5px solid #ddd;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 20px;
 }
 
@@ -82,7 +95,7 @@ header {
 }
 
 .title {
-  font: 1.1rem 'Impact';
+  font: 1.1rem 'Open Sans' sans-serif;
   border-bottom: 1px solid white;
 }
 
@@ -92,8 +105,7 @@ NAVIGATION
 ************************************/
 
 nav {
-  /*margin-top: 280px;*/
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   width: 100%;
 }
@@ -109,10 +121,11 @@ nav li {
 }
 
 .nav-link {
-  /*position: absolute;*/
   display: inline-block;
   width: 200px;
+  border: 2.5px solid #fff;
 }
+
 
 
 /***********************************
@@ -121,6 +134,11 @@ BACKGROUND
 
 #about {
   text-align: justify;
+}
+
+#background {
+  float: left;
+  width: 100%;
 }
 
 .technologies h4,
@@ -135,17 +153,23 @@ BACKGROUND
 
 .technologies ul li {
   list-style-type: disc;
+  font-size: .65rem;
+}
+
+.norm-text {
+  font-size: 1rem;
 }
 
 .technologies,
 .experience {
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: .5px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .location {
   margin-bottom: -15px;
+  font-weight: 400;
 }
 
 .education ul li {
@@ -154,6 +178,15 @@ BACKGROUND
 
 .education ul li p {
   margin-bottom: -12px;
+}
+
+/***********************************
+CONTACT
+************************************/
+
+.email {
+  font-size: 1.35rem;
+  font-weight: 400;
 }
 
 /***********************************
@@ -170,23 +203,17 @@ footer {
   margin: 0;
 }
 
-/*.top-footer a {
-  display: inline-block;
-  margin: 25px 10px;
-  height: 70px;
-  width: 70px;
-}*/
-
 .social-icon
  {
   position: relative;
   display: inline-block;
-  /*border: 2px solid #fff;*/
-  margin: 30px 10px;
-  width: 60px;
+  margin: 30px 5px;
+  width: 47px;
 }
 
 .bottom-footer {
+  float: left;
+  width: 100%;
   padding: 10px 0;
 }
 
@@ -216,7 +243,6 @@ h4 {
 
 .location {
   color: #6a6a6a;
-  font-weight: bold;
 }
 
 
@@ -242,9 +268,6 @@ header {
   background-size: cover;
 }
 
-.nav-link {
-  border: 2.5px solid #fff;
-}
 
 .nav-link:link {
   color: #fff;

@@ -1,33 +1,39 @@
 @media screen and (min-width: 620px) {
-  /*#background section {
-    display: table;
-  }*/
 
-  .technologies {
-    overflow: hidden;
-    /*float: left;
-    width: 100%;*/
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  .technologies,
+  .experience,
+  .education {
+    float: left;
+    width: 100%;
   }
 
   .left {
-    width: 40%;
+    width: 35%;
     float: left;
   }
 
   .right {
-    width: 60%;
+    width: 65%;
     float: right;
   }
 
-  .technologies ul {
-    display: inline-block;
+  .left-ul {
+    width: 50%;
+    float: left;
   }
 
-  /*.experience {
-    display: block;
-    margin-top: 500px;
-    float: none;
-  }*/
+  .right-ul {
+    width: 50%;
+    float: right;
+  }
 
 
 
